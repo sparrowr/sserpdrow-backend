@@ -10,7 +10,6 @@ const userRoutes = require('./app/routes/user_routes')
 const pageRoutes = require('./app/routes/page_routes')
 const blogRoutes = require('./app/routes/blog_routes')
 
-
 // require database configuration logic
 // `db` will be the actual Mongo URI as a string
 const db = require('./config/db')
@@ -68,6 +67,7 @@ app.use(auth)
 // JS objects before they reach the route files.
 // The method `.use` sets up middleware for the Express application
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // register route files
 app.use(exampleRoutes)
