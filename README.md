@@ -1,22 +1,40 @@
-# Sserpdrow Backend
+# Sserpdrow Backend - Bonus Version
 
 This is a Sserpdrow (Wordpress backwards) team project built at General
 Assembly's Web Development Immersive.
 
-This repository is the backend or API of the project. The client
-or frontend of the project is [here](https://github.com/tautology-club/client-sserpdrow).
+This repository is the backend or API of the project.
 
 ## Components of this Project
 
 The early drafts of the frontend client are [here](https://github.com/tautology-club/sserpdrow-client).
 
-The current frontend client repository is [here](https://github.com/tautology-club/client-sserpdrow).
+The main frontend client repository is [here](https://github.com/tautology-club/client-sserpdrow).
 
-The backend API repository is [here](https://github.com/tautology-club/sserpdrow-backend).
+The main backend API repository is [here](https://github.com/tautology-club/sserpdrow-backend).
 
-The deployed frontend client is [here](https://tautology-club.github.io/client-sserpdrow/).
+The main deployed frontend client is [here](https://tautology-club.github.io/client-sserpdrow/).
 
-The deployed backend API is [here](https://pacific-lake-39293.herokuapp.com/).
+The main deployed backend API is [here](https://pacific-lake-39293.herokuapp.com/).
+
+The bonus version frontend client repository is [here](https://github.com/sparrowr/client-sserpdrow).
+
+The bonus version backend API repository is [here](https://github.com/sparrowr/sserpdrow-backend).
+
+The bonus version deployed frontend client is [here](https://sparrowr.github.io/client-sserpdrow/).
+
+The bonus version deployed backend API is [here](https://whispering-wildwood-28696.herokuapp.com/).
+
+## Bonus Feature: Admin Mode
+
+The project has been adjusted so that some users have 'admin' permissions and can
+edit or remove any blog posts and any pages, regardless of the owners of the posts
+or pages.
+
+Specifically, a user's email address must be listed in the adminEmails array in
+`assets/scripts/auth/ui.js` in the frontend client, and the same email address must
+appear in the adminEmails array in [`lib/custom_errors.js`](`lib/custom_errors.js`) in the backend client.
+
 
 ## Structure of this Repository
 
